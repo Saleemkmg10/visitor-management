@@ -1,0 +1,308 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: linear-gradient(135deg, #eef4ff, #f8fbff);
+    color: #1e293b;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   Main Container
+   ========================= */
+
+.container {
+    width: 92%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 0 60px;
+}
+
+
+/* =========================
+   Header
+   ========================= */
+
+.header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.header-icon {
+    width: 65px;
+    height: 65px;
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #2563eb;
+    color: white;
+
+    border-radius: 18px;
+
+    font-size: 30px;
+
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #0f172a;
+}
+
+.subtitle {
+    margin-top: 8px;
+    color: #64748b;
+    font-size: 15px;
+}
+
+
+/* =========================
+   Cards
+   ========================= */
+
+.card {
+    background: white;
+
+    padding: 28px;
+
+    margin-top: 20px;
+
+    border-radius: 16px;
+
+    border: 1px solid #e2e8f0;
+
+    box-shadow:
+        0 8px 30px rgba(15, 23, 42, 0.07);
+
+    transition: 0.2s ease;
+}
+
+.card:hover {
+    box-shadow:
+        0 12px 35px rgba(15, 23, 42, 0.10);
+}
+
+
+/* =========================
+   Card Heading
+   ========================= */
+
+.card h2 {
+    margin-top: 0;
+    margin-bottom: 22px;
+
+    color: #0f172a;
+
+    font-size: 21px;
+}
+
+
+/* =========================
+   Labels
+   ========================= */
+
+label {
+    display: block;
+
+    margin-top: 16px;
+    margin-bottom: 7px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #334155;
+}
+
+
+/* =========================
+   Inputs
+   ========================= */
+
+input,
+select {
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    font-size: 15px;
+
+    color: #1e293b;
+
+    outline: none;
+
+    transition: 0.2s ease;
+}
+
+input::placeholder {
+    color: #94a3b8;
+}
+
+input:focus,
+select:focus {
+    border-color: #2563eb;
+
+    box-shadow:
+        0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* =========================
+   Buttons
+   ========================= */
+
+button {
+    margin-top: 20px;
+
+    padding: 12px 20px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #2563eb;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+
+    margin-right: 8px;
+}
+
+button:hover {
+    background: #1d4ed8;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 6px 15px rgba(37, 99, 235, 0.20);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   Visit Status
+   ========================= */
+
+#visitStatus {
+    display: inline-block;
+
+    margin: 5px 0 15px;
+
+    padding: 9px 16px;
+
+    border-radius: 20px;
+
+    background: #dbeafe;
+
+    color: #1d4ed8;
+
+    font-size: 14px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   Notifications
+   ========================= */
+
+#notifications {
+    padding: 16px;
+
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 10px;
+
+    color: #475569;
+
+    font-size: 14px;
+
+    min-height: 45px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* =========================
+   Visitor Details
+   ========================= */
+
+#visitorDetails {
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    margin-bottom: 10px;
+}
+
+#visitorDetails p {
+    margin: 7px 0;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   Hidden
+   ========================= */
+
+.hidden {
+    display: none;
+}
+
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 94%;
+        padding-top: 25px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+        margin-right: 0;
+    }
+}
